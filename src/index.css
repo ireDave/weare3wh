@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: "StagSansBold";
+  src: local("StagSansBold"),
+    url("src/fonts/StagSans-Bold.oft") format("opentype");
+}
+@font-face {
+  font-family: "StagSansBook";
+  src: local("StagSansBook"),
+    url("src/fonts/StagSans-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "StagSansThin";
+  src: local("StagSansThin"),
+    url("src/fonts/StagSans-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("./src/fonts/icomoon.eot?hoonad") format("embedded-opentype");
+  src: url("./src/fonts/icomoon.eot?hoonad#iefix") format("embedded-opentype"),
+    url("./src/fonts/icomoon.ttf?hoonad") format("truetype"),
+    url("./src/fonts/icomoon.woff?hoonad") format("woff"),
+    url("./src/fonts/icomoon.svg?hoonad#icomoon") format("svg");
+}
+@tailwind utilities;
+
+.card {
+  text-align: center;
+  perspective: 1000px;
+  position: relative;
+  cursor: pointer;
+}
+
+.back,
+.front {
+
+}
+
+.back {
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}

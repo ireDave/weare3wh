@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="relative" style="opacity:0;">
+  <header class="fixed top-0 left-0 right-0 z-40 bg-secondary w-full">
+    <div class="container mx-auto  px-5 py-5 flex flex-row justify-between items-center max-w-6xl">
+      <div><img src="./src/assets/logo.webp" alt="3WhiteHats digital marketing agency logo" class="h-8 w-24"></div>
+      <div>
+        <!-- phone icon -->
+        <a href="tel:0204 100 22 44"
+          class="text-primary text-bold flex flex-row gap-2 items-center text-xl hover:text-2xl transition-all ease-in-out duration-300"><svg
+            xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          0204 100 22 44
+        </a>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section-->
+    <section class="relative min-h-screen bg-no-repeat bg-bottom bg-cover py-20 px-6 "
+      style="background-image: url('./src/assets/hero.webp');">
+      <div class="relative max-w-6xl h-full mx-auto">
+
+        <div class="absolute left-0 right-0 top-40
+        mx-auto p-12 rounded-xl bg-black/60 w-9/12 
+        flex flex-col items-start 
+        md:flex-row
+        gap-6 clip-hero" style="clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);">
+          <div class="w-full lg:w-2/3">
+            <!-- left side -->
+            <h1 class="text-secondary text-4xl mb-4 font-sansthin"> Sell more stuff, get more leads.</h1>
+
+            <p class="text-secondary leading-6">Exceptional digital marketing campaigns for brands. Let's talk,
+              what's your website?
+            </p>
+          </div>
+          <!-- end left side -->
+          <!-- right side -->
+          <div class="w-full lg:w-1/3 self-center">
+
+            <form action="" class="w-full mx-auto rounded-lg shadow-xl overflow-hidden pt-4 space-y-4 my-auto">
+              <div class=" relative group ">
+                <input type="text" id="website" required
+                  class="w-full py-1 text-sm peer text-secondary border-b  bg-transparent outline-none">
+                <label for="website"
+                  class="transform transition-all 
+                absolute top-0 left-0 h-full 
+                flex items-center pl-2 
+                text-secondary text-sm 
+                group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
+                  Your Website</label>
+              </div>
+
+              <button class="inline-block px-6 py-2.5 w-full
+          bg-primary text-white 
+          font-medium text-xs leading-tight uppercase rounded shadow-md 
+          hover:bg-base hover:shadow-lg 
+          focus:bg-base focus:shadow-lg focus:outline-none focus:ring-0 
+          active:bg-base active:shadow-lg 
+          transition duration-150 ease-in-out">Let's Talk</button>
+            </form>
+          </div>
+          <!-- end right side -->
+        </div>
+      </div>
+
+    </section>
+    <!-- end Hero Section-->
+
+    <!-- Services Section-->
+    <section class="bg-base py-24 px-6 services__section">
+      <!-- Section Heading -->
+      <div class="relative container h-full mx-auto mb-10">
+        <h2 class="text-secondary text-4xl text-center mb-4 services__header">Digital Marketing for Wellington</h2>
+        <p class="text-secondary text-lg text-center services__subheader">Our agency help businesses in NZ's capital:
+        </p>
+      </div>
+      <!-- End Section Heading -->
+      <!-- Section Content -->
+      <div class=" max-w-5xl h-full mx-auto py-5 px-6
+      grid grid-cols-2 gap-2
+      md:grid-cols-4
+      place-content-center
+      place-items-center">
+        <!-- Card  -->
+        <div class="text-secondary bg-primary rounded-lg h-64 w-52 card">
+          <div
+            class="front  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
+            <div>
+              <img src="./src/assets/benefits-grow.webp" alt="" class="h-10 w-12 mx-auto">
+              <h3 class="text-center text-2xl">Grow online</h3>
+            </div>
+          </div>
+          <div
+            class="back w-auto overflow-hidden will-change-transform pointer-events-none h-full grid place-content-center">
+            <p class="text-secondary w-32">We'll recommend a marketing mix which will help you grow your brand online.
+            </p>
+
+          </div>
+
+
+        </div>
+        <!-- end Card  -->
+        <!-- Card  -->
+
+        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+          <div
+            class="front  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
+            <img src="./src/assets/benefits-results.webp" alt="" class="h-10 w-12 mx-auto">
+            <h3 class="text-center text-2xl">Get Results</h3>
+
+          </div>
+          <div
+            class="back w-auto overflow-hidden will-change-transform pointer-events-none h-full grid place-content-center">
+            <p class="text-secondary w-32">Most of our clients want one of two things: more leads, more sales. Our
+              data-driven
+              approach to marketing hones in on results.</p>
+          </div>
+
+        </div>
+
+
+        <!-- end Card  -->
+        <!-- Card  -->
+
+        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+          <div
+            class="front  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
+            <img src="./src/assets/benefits-reduce.webp" alt="" class="h-10 w-12 mx-auto">
+            <h3 class="text-center text-2xl">Reduce Costs</h3>
+
+          </div>
+          <div
+            class="back w-auto overflow-hidden will-change-transform pointer-events-none h-full grid place-content-center">
+            <p class="text-secondary w-32">We believe you shouldn’t have to break the bank to afford great digital
+              marketing results.
+            </p>
+
+          </div>
+
+
+        </div>
+        <!-- end Card  -->
+        <!-- Card  -->
+        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+          <div class="front  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
+            <img src="./src/assets/benefits-hat.webp" alt="" class="h-10 w-12 mx-auto">
+            <h3 class="text-center text-2xl">Get Heard</h3>
+          </div>
+          <div
+          class="back w-auto overflow-hidden will-change-transform pointer-events-none h-full grid place-content-center">
+          <p class="text-secondary w-32">Got something to say? We'll help you get your message out there through the right
+            channels for maximum impact.
+          </p>
+
+        </div>
+        </div>
+        <!-- end Card  -->
+
+
+      </div>
+      <!-- End Section Content-->
+    </section>
+    <!-- end Services Section-->
+
+    <!-- Testimonials Section-->
+    <section class="bg-secondary py-10">
+      <div class="container bg-base m-auto w-5/6 xl:w-4/6 py-14 px-4 space-y-6">
+        <h3 class="text-4xl text-secondary text-center mb-14 ">
+          +80% Increase in SEM revenue
+        </h3>
+        <div class="grid grid-cols-6 lg:gap-6 px-4 md:px-32 ">
+          <div class="container lg:col-span-4  col-span-6 space-y-2">
+            <p
+              class="text-secondary relative 
+            before:content-['\e977'] before:font-icons before:text-lg before:-left-6 before:-top-8 before:md:text-4xl before:md:-left-12 before:md:-top-6 before:absolute">
+              3WH have a very professional commitment to their work, and our growth. Our SEO and SEM revenue has
+              increased
+              by 14% and 80% since we've started collaborating together and we have surpassed targets in FY19.
+            </p>
+            <p class="text-secondary ">
+              Isaac goes above and beyond with his support, has genuine interest and actively participates in the growth
+              of
+              our business as a buying group, and that of our franchisees. This level of transparency, commitment and
+              professionalism is something I have not found in many other SEO/SEM companies.
+            </p>
+            <p class="text-secondary ">
+              If you're at a tipping point and in doubt, happy to be a reference for Isaac and 3WH so I can convince you
+              myself
+            </p>
+          </div>
+          <div class="container  col-span-6 lg:col-span-2 mb-1 mt-auto pt-10">
+            <img src="./src/assets/phya-leong-min.webp" alt="" class="rounded-full mx-auto h-32 w-32 mt-auto mb-2">
+            <div>
+              <p class="text-secondary text-center font-bold">
+                Phyabae Leong
+              </p>
+              <p class="text-secondary text-center text-sm">
+                Head of Marketing
+              </p>
+              <p class="text-secondary text-center text-xs">
+                Office Brands Sydney
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- end Testimonials Section-->
+    <!-- How we Roll Section-->
+    <section class="bg-base py-20 px-6 min-h-screen hidden">
+      <div class="container mx-auto">
+        <h2 class="text-3xl text-sansthin font-thin text-secondary text-center mb-20">Our approach to digital</h2>
+        <div class="relative mx-auto">
+
+          <h3 class="text-secondary  font-bold text-4xl text-center">Test</h3>
+          <p class="text-secondary text-lg text-center w-4/6 mx-auto">Experimentation is at the heart of everything or
+            digital marketing agency do. We
+            react quickly to harness innovations and evolutions across the online marketing
+            landscape, helping keep our clients one step ahead of their competitors.</p>
+          <h3 class="text-secondary font-bold text-4xl text-center">Measure</h3>
+          <p class="text-secondary text-lg text-center w-4/6 mx-auto">
+            By constantly evaluating our activity, we are able to uncover any elements that can be further optimised and
+            adjusted to drive progress. This is where our continuous campaign improvement really starts to make a
+            difference, helping accelerate our digital marketing campaigns ahead of the competition.
+          </p>
+          <h3 class="text-secondary font-bold text-4xl text-center">Optimise</h3>
+          <p class="text-secondary text-lg text-center w-4/6 mx-auto">
+            These 'experimental' online marketing tactics are always monitored closely. We constantly measure and
+            evaluate the success of our innovations to ensure they are delivering the necessary return on investment,
+            according to the objectives we have agreed for the digital campaign.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end How we Roll Section-->
+  </main>
+  <footer class="px-5 py-5">
+
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
