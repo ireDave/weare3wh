@@ -19,7 +19,10 @@ module.exports = {
         '120': '120deg',
         '270': '270deg',
         '252': '252deg',
-      }
+      },
+      content: {
+        'link': 'url("src/assets/quotes-right.svg.svg")',
+      },
      
     },
   },
