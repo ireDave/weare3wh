@@ -16,13 +16,11 @@
     url("src/fonts/StagSans-Thin.otf") format("opentype");
 }
 @font-face {
-  font-family: "icomoon";
-  src: url("./src/fonts/icomoon.eot?hoonad") format("embedded-opentype");
-  src: url("./src/fonts/icomoon.eot?hoonad#iefix") format("embedded-opentype"),
-    url("./src/fonts/icomoon.ttf?hoonad") format("truetype"),
-    url("./src/fonts/icomoon.woff?hoonad") format("woff"),
-    url("./src/fonts/icomoon.svg?hoonad#icomoon") format("svg");
+  font-family: "StagSansBold";
+  src: local("StagSansBold"),
+    url("src/fonts/StagSans-Bold.otf") format("opentype");
 }
+
 @tailwind utilities;
 
 .card {
@@ -45,4 +43,21 @@
   top: 0;
   left: 0;
 
+}
+
+
+/* position outside */
+.swiper-button-next {
+  right: 0!important;
+  color: #014960!important;
+}
+/* #014960 */
+.swiper-button-prev{
+  left: -2rem!important;
+  color: #014960!important;
+}
+
+.swiper-slide {
+  height: 100% !important;
+  align-self: stretch !important;
 }

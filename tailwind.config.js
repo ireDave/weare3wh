@@ -13,7 +13,8 @@ module.exports = {
       fontFamily: {
         'sans': ['StagSansBook', 'Helvetica', 'Arial', 'sans-serif'],
         'sansthin': ['StagSansThin', 'Helvetica', 'Arial', 'sans-serif'],
-        'icons': ['icomoon']
+        'sansbold': ['StagSansBold', 'Helvetica', 'Arial', 'sans-serif'],
+
       },
       rotate: {
         '120': '120deg',
