@@ -4,11 +4,52 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="description"
+    content="We're a Wellington based agency helping businesses like yours grow 💪 Let's talk about your business ☎ 0204 100 22 44.">
+  <meta property='og:type' content='website'>
+  <meta property='og:url' content="https://www.3wh.co.nz">
+  <meta property='og:title' content='Get three personalised and FREE digital marketing tips from 3WH'>
+  <meta property='og:description'
+    content="3WH is a digital marketing agency in Wellington who help kiwi brands & businesses punch above their weight via SEO, PPC and Web Analytics.">
+  <meta property='og:description'
+    content="3WH is a digital marketing agency in Wellington who help kiwi brands & businesses punch above their weight via SEO, PPC and Web Analytics.">
+  <meta property='og:site_name' content="3WhiteHats">
+  <meta property='og:image' content='./src/assets/nextlevel.webp'>
 
   <title>Digital Marketing Agency Wellington, 3WH ⭐⭐⭐</title>
-  <script type="module" crossorigin src="/assets/index.ef3ee550.js"></script>
-  <link rel="stylesheet" href="/assets/index.46b6c56a.css">
+  <link rel="icon" href="/assets/favicon.0c42bb17.ico" type="image/x-icon">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "3WhiteHats",
+      "alternateName": "Three white hats",
+      "description": "Digital marketing agency in Wellington CBD",
+      "url":"https://www.3wh.co.nz/digital-marketing-agency-wellington.php",
+      "sameAs": "https://www.google.com/maps/place/3WhiteHats+Digital+Marketing+Agency/@-41.296065,174.7097442,12z/data=!4m8!1m2!2m1!1sSEO+Agency+Wellington+!3m4!1s0x6d38afba41d4f3a3:0xc062f2b65a6d082b!8m2!3d-41.296065!4d174.779782",
+      "logo": "https://img.betapage.co/images/72752168-72752259.png",
+      "image": "https://img.betapage.co/images/72752168-72752259.png",
+      "email": "hello@3wh.co.nz",
+      "telephone": "00642041002244",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "New Zealand",
+        "addressRegion": "Wellington",
+        "postalCode": "6011",
+        "streetAddress": "BizDojo, 115, Tory Street, Te Aro, Wellington"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingCount": "4",
+        "reviewCount": "4",
+        "ratingValue": "5"
+      },
+      "legalName": "3WHITEHATS LIMITED"
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index.5a448c22.js"></script>
+  <link rel="stylesheet" href="/assets/index.bb363da5.css">
 </head>
 
 <body class="relative" style="opacity:0;">
@@ -53,10 +94,15 @@
           <!-- right side -->
           <div class="w-full lg:w-1/3 self-center">
 
-            <form action="" class="w-full mx-auto rounded-lg shadow-xl overflow-hidden pt-4 space-y-4 my-auto">
+            <form class="w-full mx-auto rounded-lg shadow-xl overflow-hidden 
+            pt-4 space-y-4 my-auto" x-data="websiteForm" @submit.prevent="setWebsite()">
               <div class=" relative group ">
-                <input type="text" id="website" required
-                  class="w-full py-1 text-sm peer text-secondary border-b  bg-transparent outline-none">
+
+                <input type="text" name="website" required
+                  class="w-full py-1 text-sm peer text-secondary border-b  bg-transparent outline-none"
+                  x-model="website">
+
+
                 <label for="website"
                   class="transform transition-all 
                 absolute top-0 left-0 h-full 
@@ -92,14 +138,15 @@
       </div>
       <!-- End Section Heading -->
       <!-- Section Content -->
-      <div class=" max-w-5xl h-full mx-auto py-5 px-6
-      grid grid-cols-2 gap-8
-      lg:grid-cols-4
-      lg:gap-2
+      <div class=" max-w-6xl h-full mx-auto py-5 px-6
+      grid grid-cols-1 gap-8
+      sm:grid-cols-2
+      md:grid-cols-4
+      md:gap-2
       place-content-center
       place-items-center">
         <!-- Card  -->
-        <div class="text-secondary bg-primary rounded-lg h-64 w-52 card">
+        <div class="text-secondary bg-primary rounded-lg h-64 w-48 card">
           <div
             class="back  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
             <div>
@@ -119,7 +166,7 @@
         <!-- end Card  -->
 
         <!-- Card  -->
-        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+        <div class="text-secondary bg-primary rounded-lg h-64 w-48 card">
           <div
             class=" back overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
             <img src="data:image/webp;base64,UklGRj4CAABXRUJQVlA4TDICAAAvOoAMEJXIkiTJkZW5/6X9o3e7+2kNifF0IiIkAABYNlJ1tm3btm3btm3btm1bb9u2/+y7TEDWaVl06NJraUgO6CJxSdCujguCbBQD2DeqybN6guYCxDttWu9JrdGsm+gTsNCa3ie4blEEI+Zrz1+sS+YdY0KhxTLDaC2hXYjteIHolQuN0K7mJdvmorx1+Eq7vHcx6mvcbgXGVb+WfhmNNqBFRan8d/EsddRAazrau+Suv4jwemRPXGRXKWQTo/KPqy2fA3LLzwV4kpxUJ/SAEsqOHANuk9xCxxOX3iGDz4JMmFTdHH2v66FVwCNxfLQ7s01GumMXKpAu4TdTe0brIT24aEU58hPjDA6jgP+CYNBXf1uX5vAkeC3XNzZzqFQ7d6EJXYQ6Atp6STDn4Uv9U61okwRKmDyqnOToJ2AO5zm4Im3XMtEkwShUnWIWsJxn5G3dp5B15Gr/O5KEQqEXXipFytKbfjPOKmk9NjXRNFn/+EOzlZz79a2eeFw79VcI7IBW6Th17oNLF/81oT6g3TB1VQ2OEsAEiqx7ZJtgaDi3nklkyEe45yKkVBOyFZ2NNZDEHe9mvjtyn6BblYmCspggZ3zUc0Dx1VuEwWDX1kVAbNZD9wG3YRPMO9pOhNcbnb6V6UUEsVKvv1Qgyw6wEF/rJdtcyPrExnsbtMZP4tjBS/n4+yKw9yTxHe8d/zxngQj5iGAG2esIdwLyehI6Aed1/MxtnNefqyovee9VtZ0A" alt="" class="h-10 w-12 mx-auto">
@@ -138,7 +185,7 @@
         <!-- end Card  -->
 
         <!-- Card  -->
-        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+        <div class="text-secondary bg-primary rounded-lg h-64 w-48 card">
           <div
             class="back  overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
             <img src="data:image/webp;base64,UklGRvYCAABXRUJQVlA4TOoCAAAvNIAMEJVIkiTJVax3/0v7oh+imy+2CYxOYCIkAABYNlLXs23btm3btm37bdv+s23btm1MmQBgX2TWPqDdsSuon1ONCoMzzXuZn45/T5Srob5MExmPLOdkaYCIS4BQBEnxAoLCgjW0FxCSrtWALyB8KmMtrpYM84S7QfEJht4kJ9/f3+6zQ7QH37nua3UmiIybmuTScIw57JPGDjxXGnAw4B4wX7vGJllOAkHTBCTzITyvkB6jo2ka0EpwhkLFFoYEhR4owUMwefl4AM6cI8kMNYbjxU6QKq8irBnxmrXBBqBwHsv7vHPkTZRLV+7jSBI5MAqh0Z/nvNh8gLyr5fe+QYrvd8FZGbM000Cd1wbFrI5PkFtc4ec/Uoi/go8j65enKBag7YCzMwoDAmQD2Ip8zb8LIMfGwyXRQaThATuAmJu+BfL0zymd4fEzEG9Yml+ACrcN8tmTYR9D0QrUsQBpF545YjZw8XuIHlUWxCwQksIoZSTMfAetIA7gFf4/USi17tcP0uVEw/pkE3D15HFfS0B9JE3RPQv91SWTFuIDcOd9uOOsurjAJy5JO1Qh9XnFnxoadobqRjUL8JwEmRCTtSMX6wYhpitLhW2grRFp7lgCrmJQJbwt758jgaCtEPrTf1pJguVW3+EmYBYaCmXFsJrunycJNnl2qx1R4HhXdyHQUEsSIk5tKVY4K4HvXum//KiMDcJqzs4Qyx5F5BQwQc7uanQCOMKutGKC15oTCvMQcfFEm7P2+XHnjlFkBYW8XRjf4A6cXHs5QXedaHSXM0FwkkiCVaUa2rIPgFEhdPloBFx5fT50lYkQN2X2wt32Tb0pxy2sObkowtxwWwuCnh6dD47J7jo1rdEPd0TzcFGMG5QEM3lcyYygF3vlRJMA4uz/wgKjzGTSqQir5Ha73SgmcL9deLxMdDzxJUFPR94TcO3tOuSdt7BQLaRCJpZ1y/R+lWAVIPlXAj9KiDYoah3/aF/mRJEHAA==" alt="" class="h-10 w-12 mx-auto">
@@ -158,7 +205,7 @@
         <!-- end Card  -->
 
         <!-- Card  -->
-        <div class="text-secondary bg-primary p-5 rounded-lg h-64 w-52 card">
+        <div class="text-secondary bg-primary rounded-lg h-64 w-48 card">
           <div
             class=" back overflow-hidden will-change-transform pointer-events-none w-full h-full grid place-content-center">
             <img src="data:image/webp;base64,UklGRlACAABXRUJQVlA4TEQCAAAvTYAMEIcgFkzmL92ZwvzPv0AghRtcogaD4UC2lbq5gCKYtGH/221+TbuAiP5PAE+XzJip/ElbFZBp/0Gm0KLD/AMtZxh9880Z+lvqM10AwrCF1n6o5QwDkK4EEL+jntkFwMZa1Z4iHif7UcscBiA+t/r8jp3waZzsi4B6ZhcAi1cdf6OttdmeJudlyRwGID63On1fW6uqZC8FW48TVAAsXnX5Ln9XVb07+wFbnRyAOdSd9/i7qurtHAfU2cAWz8f4u6rq7RxLy0utEV+yxfesqmp1jm1Gs+dBn/1jVK2Nk7IIn08TYDiAGqdTkYzntSUgGtcDmfILzRZYbmmNn6A5bn+EiQ7kVWdf8ksBQdT5+DlyPZsErf/KRAeXJ7qN32iB2zVv6PBfsBVWblyNz8etKYwG4kPOSWT480TAHRhVW8iZz3getKUDaFXVFvIdnSO/ZNOFXZ31OfVMwuuMA9q/1Bonddbn1KOhSBx3aArQ5/YM0FmfeSAL58cYSxpAn9sjQHOrKtnD1o60XWU4oGNJA+hzewJIbIseQMKyk7ixq2NJA+hze8DV3kk+E/M9QMdMA+hzexZJ9z3yBCCeaQB9bk+aQn70dgUQzzSArs8xJwXQQVwCxDMNIAxbnkBiAyDp7QZAPFPpm2/O0Acoc0/iHkCm0MNh5fs6GAqEkLdhqwCS9gAmukTE7N9AMyNTeeJQDofe92TNo9b/AQmviFgg/oI3JuBG/gVJeofmf4KEaUz5F81hhCF/gmwAsuqfIGZEpvCz" alt="" class="h-10 w-12 mx-auto">
@@ -348,39 +395,45 @@
           <div class="text-secondary grid grid-cols-4 grid-rows-6 gap-6 mx-auto max-w-md " x-data="{ active: 'SEO' }">
             <nav class="col-span-2 row-span-6">
               <ul class="flex flex-col pt-2 px-1 w-full text-lg gap-4">
-                <li >
-                  <button @click="active = 'SEO'" class="flex items-center justify-center w-full rounded-lg border h-full px-6 py-2 " 
-                  :class="active === 'SEO' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' "
-                  > SEO </button></li>
-                <li >
-                   <button @click="active = 'GA'" class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
-                   :class="active === 'GA' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' " >
+                <li>
+                  <button @click="active = 'SEO'"
+                    class="flex items-center justify-center w-full rounded-lg border h-full px-6 py-2 "
+                    :class="active === 'SEO' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' ">
+                    SEO </button>
+                </li>
+                <li>
+                  <button @click="active = 'GA'"
+                    class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
+                    :class="active === 'GA' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' ">
                     Google Ads
                   </button>
                 </li>
-                <li >
-                  <button @click="active = 'SA'" class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2 "
-                  :class="active === 'SA' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' " 
-                  >Social Advertising
-                </button>
-              </li>
-                <li >
-                  <button @click="active = 'Analytics'" class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
-                  :class="active === 'Analytics' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' "
-                  >Analytics
-                </button>
-              </li>
-                <li >
-                  <button @click="active = 'CO'" class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
-                  :class="active === 'CO' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' " 
-                  >Conversion Optimisation
-                </button>
-              </li>
+                <li>
+                  <button @click="active = 'SA'"
+                    class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2 "
+                    :class="active === 'SA' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' ">Social
+                    Advertising
+                  </button>
+                </li>
+                <li>
+                  <button @click="active = 'Analytics'"
+                    class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
+                    :class="active === 'Analytics' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' ">Analytics
+                  </button>
+                </li>
+                <li>
+                  <button @click="active = 'CO'"
+                    class="flex items-center justify-center w-full  rounded-lg border h-full px-6 py-2"
+                    :class="active === 'CO' ? 'bg-secondary text-primary' : 'hover:bg-secondary hover:text-primary' ">Conversion
+                    Optimisation
+                  </button>
+                </li>
               </ul>
 
             </nav>
 
-            <div class="col-span-2 row-span-6 h-full grid place-content-center border border-secondary rounded-lg py-2 px-4">
+            <div
+              class="col-span-2 row-span-6 h-full grid place-content-center border border-secondary rounded-lg py-2 px-4">
               <div x-show="active === 'SEO'" class="space-y-2">
                 <h3 class="text-center text-2xl">SEO</h3>
                 <p class="place-self-center">
@@ -398,7 +451,7 @@
                   ROI-centric PPC focus. If you’re interested in increasing your digital marketing but aren’t so good
                   with the numbers, let us do the grunt work for you.
                 </p>
-       
+
               </div>
               <div x-show="active === 'SA'" class="space-y-2">
                 <h3 class="text-center text-2xl">Social Advertising</h3>
@@ -412,10 +465,10 @@
               <div x-show="active === 'Analytics'" class="space-y-2">
                 <h3 class="text-center text-2xl">Analytics</h3>
                 <p class="place-self-center">
-                The results are in! It’s time to look forward to what your next step is by evaluating what worked and
-                what didn’t and tweaking accordingly. For this kind of work we are on the pulse of the Google
-                Analytics feedback, as it is our preferred weapon of choice. We are team of taggers, dashboards,
-                analysers, data pessimists, &amp; double-checkers!
+                  The results are in! It’s time to look forward to what your next step is by evaluating what worked and
+                  what didn’t and tweaking accordingly. For this kind of work we are on the pulse of the Google
+                  Analytics feedback, as it is our preferred weapon of choice. We are team of taggers, dashboards,
+                  analysers, data pessimists, &amp; double-checkers!
                 </p>
               </div>
               <div x-show="active === 'CO'" class="space-y-2">
@@ -424,8 +477,8 @@
                 <p class="place-self-center">
                   Looking to jump into digital marketing but nervous about ROI? No worries, we’ve got you covered. Watch
                   us increase your conversion rates while maximising your ROI.
-                    </p>  
-      </div>
+                </p>
+              </div>
             </div>
 
           </div>
@@ -435,8 +488,7 @@
     <!-- end How we Roll Section-->
     <!-- Results Section  -->
     <section class="bg-accent min-h-screen">
-      <div
-        class="results_section max-w-full h-96 
+      <div class="results_section max-w-full h-96 
         bg-cover bg-no-repeat bg-center bg-fixed 
         bg-[image:url('./assets/results/keyboard-coffee-notebook.webp')] 
         md:bg-[image:url('./assets/results/laptop-bg.webp')]">
@@ -446,13 +498,13 @@
 
 
 
-        <div class="w-11/12  md:w-10/12 lg:w-9/12 xl:w-7/12 mx-auto mt-20 relative">
+        <div class="w-11/12  mx-auto mt-20 relative">
           <div class="swiper mySwiperClass">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide ">
                 <div class="bg-base py-12 px-6 
-                  rounded-lg  flex flex-col justify-between mr-10 gap-4
+                  rounded-lg  flex flex-col justify-between mr-10 gap-4 h-full
                   ">
                   <h3 class="text-secondary text-2xl text-left">Fresh ideas lead to new business</h3>
                   <div class="mx-auto text-secondary py-4">
@@ -475,9 +527,9 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide ">
                 <div class="bg-base py-12 px-6 rounded-lg shadow-base
-                  shadow-sm flex flex-col justify-between mr-10">
+                  shadow-sm flex flex-col justify-between mr-10 h-full">
                   <h3 class="text-secondary text-2xl text-center">+49% more sign ups. +53% new orders</h3>
 
                   <div class="mx-auto text-secondary py-4">
@@ -500,7 +552,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="bg-base py-12 px-6 rounded-lg shadow-base
-                  shadow-sm flex flex-col justify-between mr-10">
+                  shadow-sm flex flex-col justify-between mr-10  h-full">
                   <h3 class="text-secondary text-2xl text-center">+49% more sign ups. +53% new orders</h3>
 
                   <div class="mx-auto text-secondary py-4">
@@ -524,8 +576,8 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="flex xl:hidden swiper-button-next "></div>
+          <div class="flex xl:hidden swiper-button-prev "></div>
 
 
 
@@ -560,71 +612,89 @@
 
 
     <!-- Contact Section-->
-    <section class="bg-accent  py-20">
-      <div class="px-6 bg-accent w-full   h-44">
-        <h3 class="text-3xl text-center text-primary mx-auto p-14">Say Hello</h3>
+    <section class="bg-accent py-20">
+      <div id="contact" class="contact_form_success 
+    grid place-items-center h-full
+    bg-base rounded-lg w-11/12 md:w-6/12 lg:w-5/12 xl:w-3/12 mx-auto px-4 py-5 scale-0">
+        <div class="grid place-items-center h-full">
+          <p class="text-secondary text-2xl ">Thank you</p>
+        </div>
       </div>
 
-      <form action=""
-        class="w-11/12 md:w-6/12 lg:w-5/12 xl:w-3/12 mx-auto rounded-lg overflow-hidden pt-4 space-y-4 flex flex-col gap-2">
-        <div class=" relative group ">
-          <input type="text" id="name" required
-            class="w-full py-1 text-sm peer text-primary border-b border-primary bg-accent outline-none">
-          <label for="name"
-            class="transform transition-all 
-          absolute top-0 left-0 h-full 
-          flex items-center pl-2 
-          text-primary text-sm 
-          group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
-            Name</label>
+      <div class="bcontact bg-base rounded-lg w-11/12 md:w-6/12 lg:w-5/12 xl:w-3/12 mx-auto px-4 py-5">
+
+        <div class="px-6 bg-base w-full">
+          <h3 class="text-3xl text-center text-secondary mx-auto pb-5">Say Hello</h3>
         </div>
 
-        <div class=" relative group ">
-          <input type="email" id="email" required
-            class="w-full py-1 text-sm peer text-primary border-b border-primary bg-accent outline-none">
-          <label for="email"
-            class="transform transition-all 
-          absolute top-0 left-0 h-full 
-          flex items-center pl-2 
-          text-primary text-sm 
-          group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
-            Email</label>
-        </div>
+        <form class="full mx-auto rounded-lg overflow-hidden pt-4 space-y-4 
+  flex flex-col gap-2" x-data="contactForm" @submit.prevent="submit(`$(websiteForm.website)`)">
 
-        <div class=" relative group ">
-          <input type="number" id="phone" required
-            class="w-full py-1 text-sm peer text-primary border-b border-primary bg-accent outline-none">
-          <label for="phone"
-            class="transform transition-all 
-          absolute top-0 left-0 h-full 
-          flex items-center pl-2 
-          text-primary text-sm 
-          group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
-            Phone</label>
-        </div>
 
-        <div class=" relative group ">
-          <textarea id="message" required
-            class="w-full h-44  text-sm peer text-primary border-b border-primary bg-accent outline-none"></textarea>
-          <label for="nessage" class="transform transition-all 
-          absolute top-0 left-0 
-          flex items-center pl-2 
-          text-primary text-sm 
-          group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs 
-          group-focus-within:h-2 peer-valid:h-2
-          group-focus-within:-translate-y-full peer-valid:-translate-y-full 
-          group-focus-within:pl-0 peer-valid:pl-0">
-            Tell us about your business and goals?</label>
-        </div>
+          <div class=" relative group w-11/12 mx-auto">
+            <input type="text" name="name" required
+              class="w-full py-1 text-sm peer text-secondary border-b border-secondary bg-base outline-none"
+              x-model="data.name">
+            <label for="name"
+              class="transform transition-all 
+    absolute top-0 left-0 h-full 
+    flex items-center pl-2 
+    text-secondary text-sm 
+    group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
+              Name</label>
+          </div>
 
-        <button class="inline-block px-6 py-2.5 w-full
-    bg-primary text-white 
-    font-medium text-xs leading-tight uppercase rounded shadow-md 
-    hover:bg-base hover:shadow-lg 
-    focus:bg-base focus:shadow-lg focus:outline-none focus:ring-0 
-    active:bg-base active:shadow-lg 
-    transition duration-150 ease-in-out">Let's Talk</button>
-      </form>
+          <div class=" relative group w-11/12 mx-auto">
+            <input type="email" name="email" required
+              class="w-full py-1 text-sm peer text-secondary border-b border-secondary bg-base outline-none"
+              x-model="data.email">
+            <label for="email"
+              class="transform transition-all 
+    absolute top-0 left-0 h-full 
+    flex items-center pl-2 
+    text-secondary text-sm 
+    group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
+              Email</label>
+          </div>
+
+          <div class=" relative group w-11/12 mx-auto">
+            <input type="number" name="phone" required
+              class="w-full py-1 text-sm peer text-secondary border-b border-secondary bg-base outline-none"
+              x-model="data.phone">
+            <label for="phone"
+              class="transform transition-all 
+    absolute top-0 left-0 h-full 
+    flex items-center pl-2 
+    text-secondary text-sm 
+    group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs group-focus-within:h-1/2 peer-valid:h-1/2 group-focus-within:-translate-y-full peer-valid:-translate-y-full group-focus-within:pl-0 peer-valid:pl-0">
+              Phone</label>
+          </div>
+
+          <div class=" relative group w-11/12 mx-auto">
+            <textarea name="message" required
+              class="w-full h-44  text-sm peer text-secondary border-b border-secondary bg-base outline-none"
+              x-model="data.message"></textarea>
+            <label for="nessage" class="transform transition-all 
+    absolute top-0 left-0 
+    flex items-center pl-2 
+    text-secondary text-sm 
+    group-focus-within:text-pr group-focus-within:text-xs peer-valid:text-xs 
+    group-focus-within:h-2 peer-valid:h-2
+    group-focus-within:-translate-y-full peer-valid:-translate-y-full 
+    group-focus-within:pl-0 peer-valid:pl-0">
+              Tell us about your business and goals?</label>
+          </div>
+
+          <button type="submit" class="inline-block px-6 py-2.5 w-11/12 mx-auto
+  bg-secondary text-base 
+  font-medium text-xs leading-tight uppercase rounded 
+  hover:bg-base  hover:text-secondary hover:border-secondary hover:border
+  focus:bg-base focus:outline-none focus:ring-0  focus: text-secondary
+  active:bg-base   focus:text-secondary
+  transition duration-150 ease-in-out" x-text="buttonText" :disabled="loading"></button>
+        </form>
+      </div>
+
     </section>
     <!-- end Contact-->
   </main>
@@ -853,6 +923,7 @@
   </footer>
 
   
+
 </body>
 
 </html>
