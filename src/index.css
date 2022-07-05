@@ -57,7 +57,14 @@
   color: #014960!important;
 }
 
-.swiper-slide {
-  height: 100% !important;
-  align-self: stretch !important;
+ .swiper-slide {
+  height: auto !important;
+
+} 
+
+@media (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display:none !important;
+  }
 }
