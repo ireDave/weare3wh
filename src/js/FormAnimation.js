@@ -15,6 +15,7 @@ export default function bFormAnimation() {
 .to(".contact_form_success", {
       duration: 0.3,
       scale: 1,
+      y: 100,
       ease: "power4.inOut",
     });
 }
