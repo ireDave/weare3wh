@@ -11,16 +11,13 @@
   }
   @font-face {
     font-family: "StagSansBook";
-    src: url("src/fonts/StagSans-Book.otf") format("opentype");
+    src: url("/src/fonts/StagSans-Book.otf") format("opentype");
   }
   @font-face {
     font-family: "StagSansThin";
-    src: url("src/fonts/StagSans-Thin.otf") format("opentype");
+    src: url("/src/fonts/StagSans-Thin.otf") format("opentype");
   }
-  @font-face {
-    font-family: "StagSansBold";
-    src:  url("src/fonts/StagSans-Bold.otf") format("opentype");
-  }
+
 }
 
 .card {
