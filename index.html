@@ -96,7 +96,7 @@
             pt-4 space-y-4 my-auto" x-data="websiteForm" @submit.prevent="setWebsite()">
               <div class=" relative group ">
 
-                <input type="text" name="website" required maxlength="40"
+                <input type="url" name="website" required maxlength="40"
                   class="w-full py-1 text-sm peer text-secondary border-b  bg-transparent outline-none"
                   x-model="website">
 
@@ -656,7 +656,7 @@
           </div>
 
           <div class=" relative group w-11/12 mx-auto">
-            <input type="number" name="phone" required
+            <input type="tel" name="phone" required pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}"
               class="w-full py-1 text-sm peer text-secondary border-b border-secondary bg-base outline-none"
               x-model="data.phone">
             <label for="phone"
