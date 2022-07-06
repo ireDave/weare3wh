@@ -8,7 +8,7 @@ import axios from "axios";
 const botpoison = new Botpoison({
   publicKey: "pk_be97bab5-36e3-4a62-8304-ce65c4085853",
 });
-const FORMSPARK_ACTION_URL = "https://submit-form.com/EV9uRLpK";
+const FORMSPARK_ACTION_URL = "https://submit-form.com/wGiMqFLH";
 const CONFIG = {
   headers: {
     "Content-Type": "application/json",
