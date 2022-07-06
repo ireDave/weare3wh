@@ -96,7 +96,7 @@
             pt-4 space-y-4 my-auto" x-data="websiteForm" @submit.prevent="setWebsite()">
               <div class=" relative group ">
 
-                <input type="text" name="website" required
+                <input type="text" name="website" required maxlength="40"
                   class="w-full py-1 text-sm peer text-secondary border-b  bg-transparent outline-none"
                   x-model="website">
 
@@ -669,7 +669,7 @@
           </div>
 
           <div class=" relative group w-11/12 mx-auto">
-            <textarea name="message" required
+            <textarea name="message" required minlength="10"
               class="w-full h-44  text-sm peer text-secondary border-b border-secondary bg-base outline-none"
               x-model="data.message"></textarea>
             <label for="nessage" class="transform transition-all 
@@ -753,8 +753,7 @@
     <div class=" bg-accent text-primary w-full py-2">
       <div class="w-full mx-auto px-6">
         <div class="flex flex-col  md:flex-row justify-center items-center md:gap-4 sm:gap-2 ">
-          <a href="https://www.google.co.nz/search?q=3whitehats+wellington&rlz=1C1CHBF_enNZ789NZ789&oq=3whitehats+wellington&aqs=chrome..69i57j69i60j69i57j69i60l3.2547j0j1&sourceid=chrome&ie=UTF-8#lrd=0x6d38afba41d4f3a3:0xc062f2b65a6d082b,1,,,"
-            class="col-span-5">We're rated 5 / 5 based on 4 partner reviews on Google. </a>
+
           <div class="col-span-2 cursor-pointer" x-data="{ show: false }">
             <button @click="show = true">Privacy Policy</button>
             <article x-show="show" x-transition:enter="transition ease-out duration-300"
