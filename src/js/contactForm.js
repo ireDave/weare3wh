@@ -10,15 +10,7 @@ const botpoison = new Botpoison({
 });
 const FORMSPARK_ACTION_URL = "https://submit-form.com/wGiMqFLH";
 
-const sendMessage = async (message) => {
-  // 3. Process a challenge
-  const { solution } = await botpoison.challenge();
-  await axios.post(FORMSPARK_ACTION_URL, {
-    message,
-    // 4. Forward the solution
-    _botpoison: solution,
-  });
-}
+
 
 
 
@@ -37,11 +29,11 @@ window.contactForm = () => {
       this.data.website = website;
       this.buttonText = "Submitting...";
       this.loading = true;
-      //sendMessage(this.data);
+
       const { solution } = await botpoison.challenge();
       await axios.post(FORMSPARK_ACTION_URL, {
-        message: this.data,
-        // 4. Forward the solution
+        message: JSON.stringify(this.data),
+
         _botpoison: solution,
       })
       .then(function (response) {
