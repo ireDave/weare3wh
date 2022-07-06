@@ -2,52 +2,64 @@ import bFormAnimation from "./FormAnimation.js";
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
+import Botpoison from "@botpoison/browser";
+import axios from "axios";
 
+const botpoison = new Botpoison({
+  publicKey: "pk_be97bab5-36e3-4a62-8304-ce65c4085853",
+});
 const FORMSPARK_ACTION_URL = "https://submit-form.com/wGiMqFLH";
 
+const sendMessage = async (message) => {
+  // 3. Process a challenge
+  const { solution } = await botpoison.challenge();
+  await axios.post(FORMSPARK_ACTION_URL, {
+    message,
+    // 4. Forward the solution
+    _botpoison: solution,
+  });
+}
 
 
 
-let website ="";
+
+let website = "";
 window.contactForm = () => {
   return {
     data: {
       message: "",
       website: "",
-    }, 
+    },
     buttonText: "Let's Talk",
     loading: false,
-    submit() {
+    async submit() {
+     
       this.data.website = website;
       this.buttonText = "Submitting...";
       this.loading = true;
-      fetch(FORMSPARK_ACTION_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(this.data),
+      //sendMessage(this.data);
+      const { solution } = await botpoison.challenge();
+      await axios.post(FORMSPARK_ACTION_URL, {
+        message: this.data,
+        // 4. Forward the solution
+        _botpoison: solution,
       })
-        .then(() => {
-          bFormAnimation();
-        })
-        .catch(() => {
-          alert("Something went wrong");
-        })
-        .finally(() => {
+      .then(function (response) {
+        bFormAnimation();
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+      .finally(() => {
           this.data.message = "";
           this.buttonText = "Submit";
           this.loading = false;
-        });
+      });
     },
-
-  
   };
 };
 
 window.websiteForm = () => {
-
   return {
     website: "",
     setWebsite() {
@@ -57,6 +69,5 @@ window.websiteForm = () => {
         scrollTo: { y: "#contact", offsetY: 50 },
       });
     },
-
-  }
-}
+  };
+};

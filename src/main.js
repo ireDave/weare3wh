@@ -30,11 +30,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   const swiper = new Swiper(".mySwiperClass", {
     spaceBetween: 40,
+    centeredSlides: true,
     slidesPerView: 1,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     speed: 1000,
     loop: true,
     navigation: {
