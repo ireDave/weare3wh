@@ -6,7 +6,7 @@ import Botpoison from "@botpoison/browser";
 import axios from "axios";
 
 const botpoison = new Botpoison({
-  publicKey: "pk_be97bab5-36e3-4a62-8304-ce65c4085853",
+  publicKey: "pk_cf191d55-8463-48be-87d4-48bcb8a903ec",
 });
 const FORMSPARK_ACTION_URL = "https://submit-form.com/wGiMqFLH";
 const CONFIG = {
