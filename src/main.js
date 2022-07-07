@@ -1,5 +1,4 @@
 import "./index.css";
-
 // swiper core styles
 import "swiper/css";
 
@@ -10,9 +9,10 @@ import "swiper/css/effect-fade";
 import Alpine from "alpinejs";
 import focus from "@alpinejs/focus";
 
+
 import { Autoplay, Navigation, Pagination } from "swiper";
 import Swiper from "swiper";
-Swiper.use([Autoplay, Navigation, Pagination]);
+
 import hero from "./js/Hero.js";
 import services from "./js/Services.js";
 import "./js/contactForm";
@@ -26,8 +26,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   hero();
   services();
 
-
-
+  Swiper.use([Autoplay, Navigation, Pagination]);
   const swiper = new Swiper(".mySwiperClass", {
     spaceBetween: 40,
     centeredSlides: true,
@@ -49,4 +48,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
       },
     },
   });
+
+
+
+
+
+
+
 });

@@ -656,7 +656,7 @@
           </div>
 
           <div class=" relative group w-11/12 mx-auto">
-            <input type="tel" name="phone" required pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}"
+            <input type="tel" name="phone" id ="phone" required pattern="^[0-9-+\s()]*$"
               class="w-full py-1 text-sm peer text-secondary border-b border-secondary bg-base outline-none"
               x-model="data.phone">
             <label for="phone"
